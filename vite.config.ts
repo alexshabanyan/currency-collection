@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'docs', // Указываем папку "docs" вместо "dist"
   },
-  base: '/repository-name/',
+  base: '/currency-collection/',
 })
