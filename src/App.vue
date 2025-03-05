@@ -5,20 +5,14 @@ import { ChoroplethController, GeoFeature, ProjectionScale, ColorScale } from 'c
 import * as topojson from 'topojson-client';
 import type { FeatureCollection, Geometry, Feature } from 'geojson';
 import { availableBanknotes } from './constants/countries';
+import { worldGeoJSON } from './constants/data';
 
 Chart.register(...registerables, ChoroplethController, GeoFeature, ProjectionScale, ColorScale);
 
 const chartRef = ref<HTMLCanvasElement | null>(null);
 
 onMounted(async () => {
-  if (!chartRef.value) return;
-
-  // Загружаем JSON динамически
-  const response = await fetch('https://unpkg.com/world-atlas@2.0.2/countries-50m.json');
-  const worldGeoJSON = await response.json();
-
-  // Проверяем, что данные загружены корректно
-  if (!worldGeoJSON.objects?.countries) return;
+  if (!chartRef.value || !worldGeoJSON.objects?.countries) return;
 
   const countries: FeatureCollection<Geometry, { name: string }> = {
   type: "FeatureCollection",

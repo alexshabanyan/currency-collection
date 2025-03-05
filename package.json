@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/topojson-specification": "^1.0.5",
     "chart.js": "^4.4.7",
     "chartjs-chart-geo": "^4.3.4",
     "topojson-client": "^3.1.0",
