@@ -5,7 +5,16 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   build: {
-    outDir: 'docs', // Указываем папку "docs" вместо "dist"
+    outDir: 'docs',
+    emptyOutDir: true, // Очистка папки перед сборкой
+    assetsDir: 'assets', // Все ассеты внутри "docs/assets/"
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
+      },
+    },
   },
   base: '/currency-collection/',
 })
