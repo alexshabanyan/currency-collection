@@ -1,5 +1,8 @@
 import type { GeometryObject } from 'topojson-specification';
 import { Continent } from '../../world-geo-data/types';
+import { russiaArcs } from './countries-arcs/europe-arcs';
+import { antarcticaArcs } from './countries-arcs/antarctica-arcs';
+import { canadaArcs, usaArcs } from './countries-arcs/north-america-arcs';
 
 export const geometries: Array<GeometryObject> = [
   {
@@ -20,7 +23,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "894",
     "properties": {
-      "name": "Zambia"
+      "name": "Zambia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -44,7 +48,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "887",
     "properties": {
-      "name": "Yemen"
+      "name": "Yemen",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -77,7 +82,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "704",
     "properties": {
-      "name": "Vietnam"
+      "name": "Vietnam",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -101,7 +107,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "862",
     "properties": {
-      "name": "Venezuela"
+      "name": "Venezuela",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -111,7 +118,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "336",
     "properties": {
-      "name": "Vatican"
+      "name": "Vatican",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -162,7 +170,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "548",
     "properties": {
-      "name": "Vanuatu"
+      "name": "Vanuatu",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -181,7 +190,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "860",
     "properties": {
-      "name": "Uzbekistan"
+      "name": "Uzbekistan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -191,7 +201,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "858",
     "properties": {
-      "name": "Uruguay"
+      "name": "Uruguay",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -215,7 +226,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "583",
     "properties": {
-      "name": "Micronesia"
+      "name": "Micronesia",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -239,7 +251,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "584",
     "properties": {
-      "name": "Marshall Is."
+      "name": "Marshall Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -266,7 +279,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "580",
     "properties": {
-      "name": "N. Mariana Is."
+      "name": "N. Mariana Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -284,7 +298,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "850",
     "properties": {
-      "name": "U.S. Virgin Is."
+      "name": "U.S. Virgin Is.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -294,7 +309,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "316",
     "properties": {
-      "name": "Guam"
+      "name": "Guam",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -304,7 +320,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "016",
     "properties": {
-      "name": "American Samoa"
+      "name": "American Samoa",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -322,397 +339,17 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "630",
     "properties": {
-      "name": "Puerto Rico"
+      "name": "Puerto Rico",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
     "type": "MultiPolygon",
-    "arcs": [
-      [
-        [86]
-      ],
-      [
-        [87]
-      ],
-      [
-        [88]
-      ],
-      [
-        [89]
-      ],
-      [
-        [90]
-      ],
-      [
-        [91]
-      ],
-      [
-        [92]
-      ],
-      [
-        [93]
-      ],
-      [
-        [94]
-      ],
-      [
-        [95]
-      ],
-      [
-        [96]
-      ],
-      [
-        [97]
-      ],
-      [
-        [98]
-      ],
-      [
-        [99]
-      ],
-      [
-        [100]
-      ],
-      [
-        [101]
-      ],
-      [
-        [102, 103, 104, 105]
-      ],
-      [
-        [106]
-      ],
-      [
-        [107]
-      ],
-      [
-        [108]
-      ],
-      [
-        [109]
-      ],
-      [
-        [110]
-      ],
-      [
-        [111]
-      ],
-      [
-        [112]
-      ],
-      [
-        [113]
-      ],
-      [
-        [114]
-      ],
-      [
-        [115]
-      ],
-      [
-        [116]
-      ],
-      [
-        [117]
-      ],
-      [
-        [118]
-      ],
-      [
-        [119]
-      ],
-      [
-        [120]
-      ],
-      [
-        [121]
-      ],
-      [
-        [122]
-      ],
-      [
-        [123]
-      ],
-      [
-        [124]
-      ],
-      [
-        [125]
-      ],
-      [
-        [126]
-      ],
-      [
-        [127]
-      ],
-      [
-        [128]
-      ],
-      [
-        [129]
-      ],
-      [
-        [130]
-      ],
-      [
-        [131]
-      ],
-      [
-        [132]
-      ],
-      [
-        [133]
-      ],
-      [
-        [134]
-      ],
-      [
-        [135]
-      ],
-      [
-        [136]
-      ],
-      [
-        [137]
-      ],
-      [
-        [138]
-      ],
-      [
-        [139]
-      ],
-      [
-        [140]
-      ],
-      [
-        [141]
-      ],
-      [
-        [142]
-      ],
-      [
-        [143]
-      ],
-      [
-        [144]
-      ],
-      [
-        [145]
-      ],
-      [
-        [146]
-      ],
-      [
-        [147]
-      ],
-      [
-        [148]
-      ],
-      [
-        [149]
-      ],
-      [
-        [150]
-      ],
-      [
-        [151]
-      ],
-      [
-        [152]
-      ],
-      [
-        [153]
-      ],
-      [
-        [154]
-      ],
-      [
-        [155]
-      ],
-      [
-        [156]
-      ],
-      [
-        [157]
-      ],
-      [
-        [158]
-      ],
-      [
-        [159]
-      ],
-      [
-        [160]
-      ],
-      [
-        [161]
-      ],
-      [
-        [162]
-      ],
-      [
-        [163]
-      ],
-      [
-        [164, 165, 166, 167, 168]
-      ],
-      [
-        [169]
-      ],
-      [
-        [170]
-      ],
-      [
-        [171]
-      ],
-      [
-        [172]
-      ],
-      [
-        [173]
-      ],
-      [
-        [174]
-      ],
-      [
-        [175]
-      ],
-      [
-        [176]
-      ],
-      [
-        [177]
-      ],
-      [
-        [178]
-      ],
-      [
-        [179]
-      ],
-      [
-        [180]
-      ],
-      [
-        [181]
-      ],
-      [
-        [182]
-      ],
-      [
-        [183]
-      ],
-      [
-        [184]
-      ],
-      [
-        [185]
-      ],
-      [
-        [186]
-      ],
-      [
-        [187]
-      ],
-      [
-        [188]
-      ],
-      [
-        [189]
-      ],
-      [
-        [190]
-      ],
-      [
-        [191]
-      ],
-      [
-        [192]
-      ],
-      [
-        [193]
-      ],
-      [
-        [194]
-      ],
-      [
-        [195]
-      ],
-      [
-        [196]
-      ],
-      [
-        [197]
-      ],
-      [
-        [198]
-      ],
-      [
-        [199]
-      ],
-      [
-        [200]
-      ],
-      [
-        [201]
-      ],
-      [
-        [202]
-      ],
-      [
-        [203]
-      ],
-      [
-        [204]
-      ],
-      [
-        [205]
-      ],
-      [
-        [206]
-      ],
-      [
-        [207]
-      ],
-      [
-        [208]
-      ],
-      [
-        [209]
-      ],
-      [
-        [210]
-      ],
-      [
-        [211]
-      ],
-      [
-        [212]
-      ],
-      [
-        [213]
-      ],
-      [
-        [214]
-      ],
-      [
-        [215]
-      ],
-      [
-        [216]
-      ],
-      [
-        [217]
-      ],
-      [
-        [218]
-      ],
-      [
-        [219]
-      ]
-    ],
+    "arcs": usaArcs,
     "id": "840",
     "properties": {
-      "name": "United States of America"
+      "name": "United States of America",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -727,7 +364,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "239",
     "properties": {
-      "name": "S. Geo. and the Is."
+      "name": "S. Geo. and the Is.",
+      continent: Continent.ANTARCTICA,
     }
   },
   {
@@ -737,7 +375,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "086",
     "properties": {
-      "name": "Br. Indian Ocean Ter."
+      "name": "Br. Indian Ocean Ter.",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -752,7 +391,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "654",
     "properties": {
-      "name": "Saint Helena"
+      "name": "Saint Helena",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -762,7 +402,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "612",
     "properties": {
-      "name": "Pitcairn Is."
+      "name": "Pitcairn Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -772,7 +413,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "660",
     "properties": {
-      "name": "Anguilla"
+      "name": "Anguilla",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -799,7 +441,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "238",
     "properties": {
-      "name": "Falkland Is."
+      "name": "Falkland Is.",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -817,7 +460,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "136",
     "properties": {
-      "name": "Cayman Is."
+      "name": "Cayman Is.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -827,7 +471,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "060",
     "properties": {
-      "name": "Bermuda"
+      "name": "Bermuda",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -845,7 +490,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "092",
     "properties": {
-      "name": "British Virgin Is."
+      "name": "British Virgin Is.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -863,7 +509,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "796",
     "properties": {
-      "name": "Turks and Caicos Is."
+      "name": "Turks and Caicos Is.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -873,7 +520,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "500",
     "properties": {
-      "name": "Montserrat"
+      "name": "Montserrat",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -883,7 +531,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "832",
     "properties": {
-      "name": "Jersey"
+      "name": "Jersey",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -893,7 +542,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "831",
     "properties": {
-      "name": "Guernsey"
+      "name": "Guernsey",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -903,7 +553,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "833",
     "properties": {
-      "name": "Isle of Man"
+      "name": "Isle of Man",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -981,7 +632,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "826",
     "properties": {
-      "name": "United Kingdom"
+      "name": "United Kingdom",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1006,7 +658,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "784",
     "properties": {
-      "name": "United Arab Emirates"
+      "name": "United Arab Emirates",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1021,7 +674,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "804",
     "properties": {
-      "name": "Ukraine"
+      "name": "Ukraine",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1031,7 +685,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "800",
     "properties": {
-      "name": "Uganda"
+      "name": "Uganda",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1046,7 +701,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "795",
     "properties": {
-      "name": "Turkmenistan"
+      "name": "Turkmenistan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1064,7 +720,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "792",
     "properties": {
-      "name": "Turkey"
+      "name": "Turkey",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1082,7 +739,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "788",
     "properties": {
-      "name": "Tunisia"
+      "name": "Tunisia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1097,7 +755,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "780",
     "properties": {
-      "name": "Trinidad and Tobago"
+      "name": "Trinidad and Tobago",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -1115,7 +774,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "776",
     "properties": {
-      "name": "Tonga"
+      "name": "Tonga",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -1125,7 +785,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "768",
     "properties": {
-      "name": "Togo"
+      "name": "Togo",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1143,7 +804,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "626",
     "properties": {
-      "name": "Timor-Leste"
+      "name": "Timor-Leste",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1182,7 +844,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "764",
     "properties": {
-      "name": "Thailand"
+      "name": "Thailand",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1203,7 +866,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "834",
     "properties": {
-      "name": "Tanzania"
+      "name": "Tanzania",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1221,7 +885,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "762",
     "properties": {
-      "name": "Tajikistan"
+      "name": "Tajikistan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1236,7 +901,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "158",
     "properties": {
-      "name": "Taiwan"
+      "name": "Taiwan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1246,7 +912,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "760",
     "properties": {
-      "name": "Syria"
+      "name": "Syria",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1256,7 +923,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "756",
     "properties": {
-      "name": "Switzerland"
+      "name": "Switzerland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1283,7 +951,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "752",
     "properties": {
-      "name": "Sweden"
+      "name": "Sweden",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1293,7 +962,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "748",
     "properties": {
-      "name": "eSwatini"
+      "name": "eSwatini",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1303,7 +973,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "740",
     "properties": {
-      "name": "Suriname"
+      "name": "Suriname",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -1313,7 +984,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "728",
     "properties": {
-      "name": "S. Sudan"
+      "name": "S. Sudan",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1323,7 +995,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "729",
     "properties": {
-      "name": "Sudan"
+      "name": "Sudan",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1341,7 +1014,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "144",
     "properties": {
-      "name": "Sri Lanka"
+      "name": "Sri Lanka",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1386,7 +1060,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "724",
     "properties": {
-      "name": "Spain"
+      "name": "Spain",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1428,7 +1103,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "410",
     "properties": {
-      "name": "South Korea"
+      "name": "South Korea",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1444,7 +1120,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "710",
     "properties": {
-      "name": "South Africa"
+      "name": "South Africa",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1454,7 +1131,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "706",
     "properties": {
-      "name": "Somalia"
+      "name": "Somalia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1463,7 +1141,8 @@ export const geometries: Array<GeometryObject> = [
       [-443, 444, 445, 446]
     ],
     "properties": {
-      "name": "Somaliland"
+      "name": "Somaliland",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1535,7 +1214,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "090",
     "properties": {
-      "name": "Solomon Is."
+      "name": "Solomon Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -1545,7 +1225,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "703",
     "properties": {
-      "name": "Slovakia"
+      "name": "Slovakia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1555,7 +1236,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "705",
     "properties": {
-      "name": "Slovenia"
+      "name": "Slovenia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1565,7 +1247,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "702",
     "properties": {
-      "name": "Singapore"
+      "name": "Singapore",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1580,7 +1263,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "694",
     "properties": {
-      "name": "Sierra Leone"
+      "name": "Sierra Leone",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1590,7 +1274,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "690",
     "properties": {
-      "name": "Seychelles"
+      "name": "Seychelles",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1600,7 +1285,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "688",
     "properties": {
-      "name": "Serbia"
+      "name": "Serbia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1610,7 +1296,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "686",
     "properties": {
-      "name": "Senegal"
+      "name": "Senegal",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1631,7 +1318,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "682",
     "properties": {
-      "name": "Saudi Arabia"
+      "name": "Saudi Arabia",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -1646,7 +1334,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "678",
     "properties": {
-      "name": "São Tomé and Principe"
+      "name": "São Tomé and Principe",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -1656,7 +1345,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "674",
     "properties": {
-      "name": "San Marino"
+      "name": "San Marino",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -1671,7 +1361,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "882",
     "properties": {
-      "name": "Samoa"
+      "name": "Samoa",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -1689,7 +1380,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "670",
     "properties": {
-      "name": "St. Vin. and Gren."
+      "name": "St. Vin. and Gren.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -1699,7 +1391,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "662",
     "properties": {
-      "name": "Saint Lucia"
+      "name": "Saint Lucia",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -1714,7 +1407,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "659",
     "properties": {
-      "name": "St. Kitts and Nevis"
+      "name": "St. Kitts and Nevis",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -1724,313 +1418,17 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "646",
     "properties": {
-      "name": "Rwanda"
+      "name": "Rwanda",
+      continent: Continent.AFRICA,
     }
   },
   {
     "type": "MultiPolygon",
-    "arcs": [
-      [
-        [522]
-      ],
-      [
-        [523]
-      ],
-      [
-        [524]
-      ],
-      [
-        [525]
-      ],
-      [
-        [526]
-      ],
-      [
-        [527]
-      ],
-      [
-        [528]
-      ],
-      [
-        [529]
-      ],
-      [
-        [530]
-      ],
-      [
-        [531]
-      ],
-      [
-        [532]
-      ],
-      [
-        [533]
-      ],
-      [
-        [534]
-      ],
-      [
-        [535]
-      ],
-      [
-        [536]
-      ],
-      [
-        [537]
-      ],
-      [
-        [538]
-      ],
-      [
-        [539, 540, 541, 542, 543, 544, 545, 546, 547, -292, 548, 549, 550, 551, 552, 553, 554]
-      ],
-      [
-        [555]
-      ],
-      [
-        [556]
-      ],
-      [
-        [557]
-      ],
-      [
-        [558]
-      ],
-      [
-        [559]
-      ],
-      [
-        [560]
-      ],
-      [
-        [561]
-      ],
-      [
-        [562]
-      ],
-      [
-        [563]
-      ],
-      [
-        [564]
-      ],
-      [
-        [565]
-      ],
-      [
-        [566]
-      ],
-      [
-        [567]
-      ],
-      [
-        [568]
-      ],
-      [
-        [569]
-      ],
-      [
-        [570]
-      ],
-      [
-        [571]
-      ],
-      [
-        [572]
-      ],
-      [
-        [573]
-      ],
-      [
-        [574]
-      ],
-      [
-        [575]
-      ],
-      [
-        [576]
-      ],
-      [
-        [577]
-      ],
-      [
-        [578]
-      ],
-      [
-        [579]
-      ],
-      [
-        [580]
-      ],
-      [
-        [581]
-      ],
-      [
-        [582]
-      ],
-      [
-        [583]
-      ],
-      [
-        [584]
-      ],
-      [
-        [585]
-      ],
-      [
-        [586]
-      ],
-      [
-        [587]
-      ],
-      [
-        [588]
-      ],
-      [
-        [589]
-      ],
-      [
-        [590]
-      ],
-      [
-        [591]
-      ],
-      [
-        [592]
-      ],
-      [
-        [593]
-      ],
-      [
-        [594]
-      ],
-      [
-        [595]
-      ],
-      [
-        [596]
-      ],
-      [
-        [597]
-      ],
-      [
-        [598]
-      ],
-      [
-        [599]
-      ],
-      [
-        [600]
-      ],
-      [
-        [601]
-      ],
-      [
-        [602]
-      ],
-      [
-        [603]
-      ],
-      [
-        [604]
-      ],
-      [
-        [605]
-      ],
-      [
-        [606]
-      ],
-      [
-        [607]
-      ],
-      [
-        [608]
-      ],
-      [
-        [609]
-      ],
-      [
-        [610]
-      ],
-      [
-        [611]
-      ],
-      [
-        [612]
-      ],
-      [
-        [613]
-      ],
-      [
-        [614]
-      ],
-      [
-        [615]
-      ],
-      [
-        [616]
-      ],
-      [
-        [617]
-      ],
-      [
-        [618]
-      ],
-      [
-        [619]
-      ],
-      [
-        [620]
-      ],
-      [
-        [621]
-      ],
-      [
-        [622]
-      ],
-      [
-        [623]
-      ],
-      [
-        [624]
-      ],
-      [
-        [625]
-      ],
-      [
-        [626]
-      ],
-      [
-        [627]
-      ],
-      [
-        [628]
-      ],
-      [
-        [629]
-      ],
-      [
-        [630]
-      ],
-      [
-        [631]
-      ],
-      [
-        [632]
-      ],
-      [
-        [633]
-      ],
-      [
-        [634, 635, 636, 637, 638]
-      ],
-      [
-        [-283, 639]
-      ]
-    ],
+    "arcs": russiaArcs,
     "id": "643",
     "properties": {
-      "name": "Russia"
+      "name": "Russia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2040,7 +1438,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "642",
     "properties": {
-      "name": "Romania"
+      "name": "Romania",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2050,7 +1449,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "634",
     "properties": {
-      "name": "Qatar"
+      "name": "Qatar",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2086,7 +1486,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "620",
     "properties": {
-      "name": "Portugal"
+      "name": "Portugal",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2096,7 +1497,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "616",
     "properties": {
-      "name": "Poland"
+      "name": "Poland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2249,7 +1651,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "608",
     "properties": {
-      "name": "Philippines"
+      "name": "Philippines",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2259,7 +1662,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "604",
     "properties": {
-      "name": "Peru"
+      "name": "Peru",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -2269,7 +1673,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "600",
     "properties": {
-      "name": "Paraguay"
+      "name": "Paraguay",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -2356,7 +1761,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "598",
     "properties": {
-      "name": "Papua New Guinea"
+      "name": "Papua New Guinea",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2380,7 +1786,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "591",
     "properties": {
-      "name": "Panama"
+      "name": "Panama",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -2395,7 +1802,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "585",
     "properties": {
-      "name": "Palau"
+      "name": "Palau",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2405,7 +1813,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "586",
     "properties": {
-      "name": "Pakistan"
+      "name": "Pakistan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2426,7 +1835,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "512",
     "properties": {
-      "name": "Oman"
+      "name": "Oman",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2531,7 +1941,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "578",
     "properties": {
-      "name": "Norway"
+      "name": "Norway",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2546,7 +1957,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "408",
     "properties": {
-      "name": "North Korea"
+      "name": "North Korea",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2561,7 +1973,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "566",
     "properties": {
-      "name": "Nigeria"
+      "name": "Nigeria",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2571,7 +1984,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "562",
     "properties": {
-      "name": "Niger"
+      "name": "Niger",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2581,7 +1995,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "558",
     "properties": {
-      "name": "Nicaragua"
+      "name": "Nicaragua",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -2629,7 +2044,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "554",
     "properties": {
-      "name": "New Zealand"
+      "name": "New Zealand",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2639,7 +2055,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "570",
     "properties": {
-      "name": "Niue"
+      "name": "Niue",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2649,7 +2066,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "184",
     "properties": {
-      "name": "Cook Is."
+      "name": "Cook Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2694,7 +2112,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "528",
     "properties": {
-      "name": "Netherlands"
+      "name": "Netherlands",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2704,7 +2123,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "533",
     "properties": {
-      "name": "Aruba"
+      "name": "Aruba",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -2714,7 +2134,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "531",
     "properties": {
-      "name": "Curaçao"
+      "name": "Curaçao",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -2724,7 +2145,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "524",
     "properties": {
-      "name": "Nepal"
+      "name": "Nepal",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2734,7 +2156,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "520",
     "properties": {
-      "name": "Nauru"
+      "name": "Nauru",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -2744,7 +2167,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "516",
     "properties": {
-      "name": "Namibia"
+      "name": "Namibia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2756,7 +2180,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "508",
     "properties": {
-      "name": "Mozambique"
+      "name": "Mozambique",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2766,7 +2191,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "504",
     "properties": {
-      "name": "Morocco"
+      "name": "Morocco",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2776,7 +2202,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "732",
     "properties": {
-      "name": "W. Sahara"
+      "name": "W. Sahara",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2786,7 +2213,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "499",
     "properties": {
-      "name": "Montenegro"
+      "name": "Montenegro",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2796,7 +2224,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "496",
     "properties": {
-      "name": "Mongolia"
+      "name": "Mongolia",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2806,7 +2235,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "498",
     "properties": {
-      "name": "Moldova"
+      "name": "Moldova",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2816,7 +2246,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "492",
     "properties": {
-      "name": "Monaco"
+      "name": "Monaco",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2873,7 +2304,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "484",
     "properties": {
-      "name": "Mexico"
+      "name": "Mexico",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -2883,7 +2315,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "480",
     "properties": {
-      "name": "Mauritius"
+      "name": "Mauritius",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2898,7 +2331,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "478",
     "properties": {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2913,7 +2347,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "470",
     "properties": {
-      "name": "Malta"
+      "name": "Malta",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -2923,7 +2358,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "466",
     "properties": {
-      "name": "Mali"
+      "name": "Mali",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -2938,7 +2374,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "462",
     "properties": {
-      "name": "Maldives"
+      "name": "Maldives",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2974,7 +2411,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "458",
     "properties": {
-      "name": "Malaysia"
+      "name": "Malaysia",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -2992,7 +2430,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "454",
     "properties": {
-      "name": "Malawi"
+      "name": "Malawi",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3010,7 +2449,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "450",
     "properties": {
-      "name": "Madagascar"
+      "name": "Madagascar",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3020,7 +2460,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "807",
     "properties": {
-      "name": "Macedonia"
+      "name": "Macedonia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3030,7 +2471,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "442",
     "properties": {
-      "name": "Luxembourg"
+      "name": "Luxembourg",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3045,7 +2487,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "440",
     "properties": {
-      "name": "Lithuania"
+      "name": "Lithuania",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3055,7 +2498,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "438",
     "properties": {
-      "name": "Liechtenstein"
+      "name": "Liechtenstein",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3065,7 +2509,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "434",
     "properties": {
-      "name": "Libya"
+      "name": "Libya",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3075,7 +2520,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "430",
     "properties": {
-      "name": "Liberia"
+      "name": "Liberia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3085,7 +2531,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "426",
     "properties": {
-      "name": "Lesotho"
+      "name": "Lesotho",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3095,7 +2542,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "422",
     "properties": {
-      "name": "Lebanon"
+      "name": "Lebanon",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3105,7 +2553,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "428",
     "properties": {
-      "name": "Latvia"
+      "name": "Latvia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3115,7 +2564,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "418",
     "properties": {
-      "name": "Laos"
+      "name": "Laos",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3128,7 +2578,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "417",
     "properties": {
-      "name": "Kyrgyzstan"
+      "name": "Kyrgyzstan",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3143,7 +2594,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "414",
     "properties": {
-      "name": "Kuwait"
+      "name": "Kuwait",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3152,7 +2604,8 @@ export const geometries: Array<GeometryObject> = [
       [-486, -926, 954, -866]
     ],
     "properties": {
-      "name": "Kosovo"
+      "name": "Kosovo",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3218,7 +2671,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "296",
     "properties": {
-      "name": "Kiribati"
+      "name": "Kiribati",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -3233,7 +2687,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "404",
     "properties": {
-      "name": "Kenya"
+      "name": "Kenya",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -3254,7 +2709,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "398",
     "properties": {
-      "name": "Kazakhstan"
+      "name": "Kazakhstan",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3264,7 +2720,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "400",
     "properties": {
-      "name": "Jordan"
+      "name": "Jordan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3375,7 +2832,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "392",
     "properties": {
-      "name": "Japan"
+      "name": "Japan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3385,7 +2843,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "388",
     "properties": {
-      "name": "Jamaica"
+      "name": "Jamaica",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -3420,7 +2879,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "380",
     "properties": {
-      "name": "Italy"
+      "name": "Italy",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3430,7 +2890,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "376",
     "properties": {
-      "name": "Israel"
+      "name": "Israel",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3445,7 +2906,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "275",
     "properties": {
-      "name": "Palestine"
+      "name": "Palestine",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3460,7 +2922,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "372",
     "properties": {
-      "name": "Ireland"
+      "name": "Ireland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3470,7 +2933,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "368",
     "properties": {
-      "name": "Iraq"
+      "name": "Iraq",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3485,7 +2949,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "364",
     "properties": {
-      "name": "Iran"
+      "name": "Iran",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3893,7 +3358,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "360",
     "properties": {
-      "name": "Indonesia"
+      "name": "Indonesia",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3944,7 +3410,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "356",
     "properties": {
-      "name": "India"
+      "name": "India",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -3954,7 +3421,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "352",
     "properties": {
-      "name": "Iceland"
+      "name": "Iceland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3964,7 +3432,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "348",
     "properties": {
-      "name": "Hungary"
+      "name": "Hungary",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -3982,7 +3451,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "340",
     "properties": {
-      "name": "Honduras"
+      "name": "Honduras",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4000,7 +3470,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "332",
     "properties": {
-      "name": "Haiti"
+      "name": "Haiti",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4010,7 +3481,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "328",
     "properties": {
-      "name": "Guyana"
+      "name": "Guyana",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -4040,7 +3512,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "624",
     "properties": {
-      "name": "Guinea-Bissau"
+      "name": "Guinea-Bissau",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4050,7 +3523,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "324",
     "properties": {
-      "name": "Guinea"
+      "name": "Guinea",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4060,7 +3534,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "320",
     "properties": {
-      "name": "Guatemala"
+      "name": "Guatemala",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4070,7 +3545,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "308",
     "properties": {
-      "name": "Grenada"
+      "name": "Grenada",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4199,7 +3675,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "300",
     "properties": {
-      "name": "Greece"
+      "name": "Greece",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4209,7 +3686,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "288",
     "properties": {
-      "name": "Ghana"
+      "name": "Ghana",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4236,7 +3714,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "276",
     "properties": {
-      "name": "Germany"
+      "name": "Germany",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4246,7 +3725,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "268",
     "properties": {
-      "name": "Georgia"
+      "name": "Georgia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4256,7 +3736,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "270",
     "properties": {
-      "name": "Gambia"
+      "name": "Gambia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4266,7 +3747,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "266",
     "properties": {
-      "name": "Gabon"
+      "name": "Gabon",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4305,7 +3787,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "250",
     "properties": {
-      "name": "France"
+      "name": "France",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4320,7 +3803,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "666",
     "properties": {
-      "name": "St. Pierre and Miquelon"
+      "name": "St. Pierre and Miquelon",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4335,7 +3819,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "876",
     "properties": {
-      "name": "Wallis and Futuna Is."
+      "name": "Wallis and Futuna Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -4345,7 +3830,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "663",
     "properties": {
-      "name": "St-Martin"
+      "name": "St-Martin",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4355,7 +3841,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "652",
     "properties": {
-      "name": "St-Barthélemy"
+      "name": "St-Barthélemy",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4427,7 +3914,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "258",
     "properties": {
-      "name": "Fr. Polynesia"
+      "name": "Fr. Polynesia",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -4454,7 +3942,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "540",
     "properties": {
-      "name": "New Caledonia"
+      "name": "New Caledonia",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -4472,7 +3961,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "260",
     "properties": {
-      "name": "Fr. S. Antarctic Lands"
+      "name": "Fr. S. Antarctic Lands",
+      continent: Continent.ANTARCTICA,
     }
   },
   {
@@ -4490,7 +3980,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "248",
     "properties": {
-      "name": "Åland"
+      "name": "Åland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4523,7 +4014,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "246",
     "properties": {
-      "name": "Finland"
+      "name": "Finland",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4592,7 +4084,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "242",
     "properties": {
-      "name": "Fiji"
+      "name": "Fiji",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -4602,7 +4095,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "231",
     "properties": {
-      "name": "Ethiopia"
+      "name": "Ethiopia",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4623,7 +4117,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "233",
     "properties": {
-      "name": "Estonia"
+      "name": "Estonia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4641,7 +4136,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "232",
     "properties": {
-      "name": "Eritrea"
+      "name": "Eritrea",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4656,7 +4152,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "226",
     "properties": {
-      "name": "Eq. Guinea"
+      "name": "Eq. Guinea",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4666,7 +4163,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "222",
     "properties": {
-      "name": "El Salvador"
+      "name": "El Salvador",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4676,7 +4174,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "818",
     "properties": {
-      "name": "Egypt"
+      "name": "Egypt",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4712,7 +4211,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "218",
     "properties": {
-      "name": "Ecuador"
+      "name": "Ecuador",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -4723,6 +4223,8 @@ export const geometries: Array<GeometryObject> = [
     "id": "214",
     "properties": {
       "name": "Dominican Rep."
+      ,
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4732,7 +4234,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "212",
     "properties": {
-      "name": "Dominica"
+      "name": "Dominica",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4742,7 +4245,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "262",
     "properties": {
-      "name": "Djibouti"
+      "name": "Djibouti",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -4802,7 +4306,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "304",
     "properties": {
-      "name": "Greenland"
+      "name": "Greenland",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4826,7 +4331,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "234",
     "properties": {
-      "name": "Faeroe Is."
+      "name": "Faeroe Is.",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4871,7 +4377,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "208",
     "properties": {
-      "name": "Denmark"
+      "name": "Denmark",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4881,7 +4388,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "203",
     "properties": {
-      "name": "Czechia"
+      "name": "Czechia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4890,7 +4398,8 @@ export const geometries: Array<GeometryObject> = [
       [1449, 1450]
     ],
     "properties": {
-      "name": "N. Cyprus"
+      "name": "N. Cyprus",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4900,7 +4409,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "196",
     "properties": {
-      "name": "Cyprus"
+      "name": "Cyprus",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4930,7 +4440,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "192",
     "properties": {
-      "name": "Cuba"
+      "name": "Cuba",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -4978,7 +4489,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "191",
     "properties": {
-      "name": "Croatia"
+      "name": "Croatia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -4993,7 +4505,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "384",
     "properties": {
-      "name": "Côte d'Ivoire"
+      "name": "Côte d'Ivoire",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5003,7 +4516,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "188",
     "properties": {
-      "name": "Costa Rica"
+      "name": "Costa Rica",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -5013,7 +4527,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "180",
     "properties": {
-      "name": "Dem. Rep. Congo"
+      "name": "Dem. Rep. Congo",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5023,7 +4538,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "178",
     "properties": {
-      "name": "Congo"
+      "name": "Congo",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5041,7 +4557,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "174",
     "properties": {
-      "name": "Comoros"
+      "name": "Comoros",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5056,7 +4573,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "170",
     "properties": {
-      "name": "Colombia"
+      "name": "Colombia",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -5104,7 +4622,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "156",
     "properties": {
-      "name": "China"
+      "name": "China",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5114,7 +4633,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "446",
     "properties": {
-      "name": "Macao"
+      "name": "Macao",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5132,7 +4652,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "344",
     "properties": {
-      "name": "Hong Kong"
+      "name": "Hong Kong",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5234,7 +4755,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "152",
     "properties": {
-      "name": "Chile"
+      "name": "Chile",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -5244,7 +4766,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "148",
     "properties": {
-      "name": "Chad"
+      "name": "Chad",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5254,7 +4777,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "140",
     "properties": {
-      "name": "Central African Rep."
+      "name": "Central African Rep.",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5287,439 +4811,17 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "132",
     "properties": {
-      "name": "Cabo Verde"
+      "name": "Cabo Verde",
+      continent: Continent.AFRICA,
     }
   },
   {
     "type": "MultiPolygon",
-    "arcs": [
-      [
-        [1566]
-      ],
-      [
-        [1567]
-      ],
-      [
-        [1568]
-      ],
-      [
-        [-106, 1569, -169, 1570]
-      ],
-      [
-        [1571]
-      ],
-      [
-        [1572]
-      ],
-      [
-        [1573]
-      ],
-      [
-        [1574]
-      ],
-      [
-        [1575]
-      ],
-      [
-        [1576]
-      ],
-      [
-        [1577]
-      ],
-      [
-        [1578]
-      ],
-      [
-        [1579]
-      ],
-      [
-        [1580]
-      ],
-      [
-        [1581]
-      ],
-      [
-        [1582]
-      ],
-      [
-        [1583]
-      ],
-      [
-        [1584]
-      ],
-      [
-        [1585]
-      ],
-      [
-        [1586]
-      ],
-      [
-        [1587]
-      ],
-      [
-        [1588]
-      ],
-      [
-        [1589]
-      ],
-      [
-        [-165, 1590]
-      ],
-      [
-        [1591]
-      ],
-      [
-        [1592]
-      ],
-      [
-        [1593]
-      ],
-      [
-        [1594]
-      ],
-      [
-        [1595]
-      ],
-      [
-        [1596]
-      ],
-      [
-        [1597]
-      ],
-      [
-        [1598]
-      ],
-      [
-        [1599]
-      ],
-      [
-        [1600]
-      ],
-      [
-        [1601]
-      ],
-      [
-        [1602]
-      ],
-      [
-        [1603]
-      ],
-      [
-        [1604]
-      ],
-      [
-        [1605]
-      ],
-      [
-        [1606]
-      ],
-      [
-        [1607]
-      ],
-      [
-        [1608]
-      ],
-      [
-        [1609]
-      ],
-      [
-        [1610]
-      ],
-      [
-        [1611]
-      ],
-      [
-        [1612]
-      ],
-      [
-        [1613]
-      ],
-      [
-        [1614]
-      ],
-      [
-        [-104, 1615]
-      ],
-      [
-        [1616]
-      ],
-      [
-        [1617]
-      ],
-      [
-        [1618]
-      ],
-      [
-        [1619]
-      ],
-      [
-        [1620]
-      ],
-      [
-        [1621]
-      ],
-      [
-        [1622]
-      ],
-      [
-        [1623]
-      ],
-      [
-        [1624]
-      ],
-      [
-        [1625]
-      ],
-      [
-        [1626]
-      ],
-      [
-        [1627]
-      ],
-      [
-        [1628]
-      ],
-      [
-        [1629]
-      ],
-      [
-        [1630]
-      ],
-      [
-        [1631]
-      ],
-      [
-        [1632]
-      ],
-      [
-        [1633]
-      ],
-      [
-        [1634]
-      ],
-      [
-        [1635]
-      ],
-      [
-        [1636]
-      ],
-      [
-        [1637]
-      ],
-      [
-        [1638]
-      ],
-      [
-        [1639]
-      ],
-      [
-        [1640]
-      ],
-      [
-        [1641]
-      ],
-      [
-        [1642]
-      ],
-      [
-        [1643]
-      ],
-      [
-        [1644]
-      ],
-      [
-        [1645]
-      ],
-      [
-        [1646]
-      ],
-      [
-        [1647]
-      ],
-      [
-        [1648]
-      ],
-      [
-        [1649]
-      ],
-      [
-        [1650]
-      ],
-      [
-        [1651]
-      ],
-      [
-        [1652]
-      ],
-      [
-        [1653]
-      ],
-      [
-        [1654]
-      ],
-      [
-        [1655]
-      ],
-      [
-        [1656]
-      ],
-      [
-        [1657]
-      ],
-      [
-        [1658]
-      ],
-      [
-        [1659]
-      ],
-      [
-        [1660]
-      ],
-      [
-        [1661]
-      ],
-      [
-        [1662]
-      ],
-      [
-        [1663]
-      ],
-      [
-        [1664]
-      ],
-      [
-        [1665]
-      ],
-      [
-        [1666]
-      ],
-      [
-        [1667]
-      ],
-      [
-        [1668]
-      ],
-      [
-        [1669]
-      ],
-      [
-        [1670]
-      ],
-      [
-        [1671]
-      ],
-      [
-        [1672]
-      ],
-      [
-        [1673]
-      ],
-      [
-        [1674]
-      ],
-      [
-        [1675]
-      ],
-      [
-        [1676]
-      ],
-      [
-        [1677]
-      ],
-      [
-        [1678]
-      ],
-      [
-        [1679]
-      ],
-      [
-        [1680]
-      ],
-      [
-        [1681]
-      ],
-      [
-        [1682]
-      ],
-      [
-        [1683]
-      ],
-      [
-        [1684]
-      ],
-      [
-        [1685]
-      ],
-      [
-        [1686]
-      ],
-      [
-        [1687]
-      ],
-      [
-        [1688]
-      ],
-      [
-        [1689]
-      ],
-      [
-        [1690]
-      ],
-      [
-        [1691]
-      ],
-      [
-        [1692]
-      ],
-      [
-        [1693]
-      ],
-      [
-        [1694]
-      ],
-      [
-        [1695]
-      ],
-      [
-        [1696]
-      ],
-      [
-        [1697]
-      ],
-      [
-        [1698]
-      ],
-      [
-        [1699]
-      ],
-      [
-        [1700]
-      ],
-      [
-        [1701]
-      ],
-      [
-        [1702]
-      ],
-      [
-        [1703]
-      ],
-      [
-        [1704]
-      ],
-      [
-        [1705]
-      ],
-      [
-        [1706]
-      ],
-      [
-        [1707]
-      ]
-    ],
+    "arcs": canadaArcs,
     "id": "124",
     "properties": {
-      "name": "Canada"
+      "name": "Canada",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -5729,7 +4831,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "120",
     "properties": {
-      "name": "Cameroon"
+      "name": "Cameroon",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5747,7 +4850,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "116",
     "properties": {
-      "name": "Cambodia"
+      "name": "Cambodia",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5813,7 +4917,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "104",
     "properties": {
-      "name": "Myanmar"
+      "name": "Myanmar",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5823,7 +4928,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "108",
     "properties": {
-      "name": "Burundi"
+      "name": "Burundi",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5833,7 +4939,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "854",
     "properties": {
-      "name": "Burkina Faso"
+      "name": "Burkina Faso",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5843,7 +4950,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "100",
     "properties": {
-      "name": "Bulgaria"
+      "name": "Bulgaria",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -5858,7 +4966,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "096",
     "properties": {
-      "name": "Brunei"
+      "name": "Brunei",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5918,7 +5027,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "076",
     "properties": {
-      "name": "Brazil"
+      "name": "Brazil",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -5928,7 +5038,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "072",
     "properties": {
-      "name": "Botswana"
+      "name": "Botswana",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5938,7 +5049,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "070",
     "properties": {
-      "name": "Bosnia and Herz."
+      "name": "Bosnia and Herz.",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -5948,7 +5060,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "068",
     "properties": {
-      "name": "Bolivia"
+      "name": "Bolivia",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -5958,7 +5071,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "064",
     "properties": {
-      "name": "Bhutan"
+      "name": "Bhutan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -5968,7 +5082,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "204",
     "properties": {
-      "name": "Benin"
+      "name": "Benin",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -5986,7 +5101,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "084",
     "properties": {
-      "name": "Belize"
+      "name": "Belize",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -5996,7 +5112,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "056",
     "properties": {
-      "name": "Belgium"
+      "name": "Belgium",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6006,7 +5123,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "112",
     "properties": {
-      "name": "Belarus"
+      "name": "Belarus",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6016,7 +5134,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "052",
     "properties": {
-      "name": "Barbados"
+      "name": "Barbados",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -6046,7 +5165,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "050",
     "properties": {
-      "name": "Bangladesh"
+      "name": "Bangladesh",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -6056,7 +5176,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "048",
     "properties": {
-      "name": "Bahrain"
+      "name": "Bahrain",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -6110,7 +5231,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "044",
     "properties": {
-      "name": "Bahamas"
+      "name": "Bahamas",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -6129,7 +5251,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "031",
     "properties": {
-      "name": "Azerbaijan"
+      "name": "Azerbaijan",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6139,7 +5262,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "040",
     "properties": {
-      "name": "Austria"
+      "name": "Austria",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6274,7 +5398,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "036",
     "properties": {
-      "name": "Australia"
+      "name": "Australia",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -6291,7 +5416,8 @@ export const geometries: Array<GeometryObject> = [
       ]
     ],
     "properties": {
-      "name": "Indian Ocean Ter."
+      "name": "Indian Ocean Ter.",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -6301,7 +5427,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "334",
     "properties": {
-      "name": "Heard I. and McDonald Is."
+      "name": "Heard I. and McDonald Is.",
+      continent: Continent.ANTARCTICA,
     }
   },
   {
@@ -6311,7 +5438,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "574",
     "properties": {
-      "name": "Norfolk Island"
+      "name": "Norfolk Island",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -6321,7 +5449,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "036",
     "properties": {
-      "name": "Ashmore and Cartier Is."
+      "name": "Ashmore and Cartier Is.",
+      continent: Continent.AUSTRALIA,
     }
   },
   {
@@ -6337,7 +5466,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "051",
     "properties": {
-      "name": "Armenia"
+      "name": "Armenia",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6358,7 +5488,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "032",
     "properties": {
-      "name": "Argentina"
+      "name": "Argentina",
+      continent: Continent.SOUTH_AMERICA,
     }
   },
   {
@@ -6373,7 +5504,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "028",
     "properties": {
-      "name": "Antigua and Barb."
+      "name": "Antigua and Barb.",
+      continent: Continent.NORTH_AMERICA,
     }
   },
   {
@@ -6388,7 +5520,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "024",
     "properties": {
-      "name": "Angola"
+      "name": "Angola",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -6398,7 +5531,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "020",
     "properties": {
-      "name": "Andorra"
+      "name": "Andorra",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6408,7 +5542,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "012",
     "properties": {
-      "name": "Algeria"
+      "name": "Algeria",
+      continent: Continent.AFRICA,
     }
   },
   {
@@ -6418,7 +5553,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "008",
     "properties": {
-      "name": "Albania"
+      "name": "Albania",
+      continent: Continent.EUROPE,
     }
   },
   {
@@ -6428,7 +5564,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "004",
     "properties": {
-      "name": "Afghanistan"
+      "name": "Afghanistan",
+      continent: Continent.ASIA,
     }
   },
   {
@@ -6437,341 +5574,17 @@ export const geometries: Array<GeometryObject> = [
       [-756, -1510, -1185]
     ],
     "properties": {
-      "name": "Siachen Glacier"
+      "name": "Siachen Glacier",
+      continent: Continent.ASIA,
     }
   },
   {
     "type": "MultiPolygon",
-    "arcs": [
-      [
-        [1849]
-      ],
-      [
-        [1850]
-      ],
-      [
-        [1851],
-        [1852]
-      ],
-      [
-        [1853]
-      ],
-      [
-        [1854]
-      ],
-      [
-        [1855]
-      ],
-      [
-        [1856]
-      ],
-      [
-        [1857]
-      ],
-      [
-        [1858]
-      ],
-      [
-        [1859]
-      ],
-      [
-        [1860]
-      ],
-      [
-        [1861]
-      ],
-      [
-        [1862]
-      ],
-      [
-        [1863]
-      ],
-      [
-        [1864]
-      ],
-      [
-        [1865]
-      ],
-      [
-        [1866]
-      ],
-      [
-        [1867]
-      ],
-      [
-        [1868]
-      ],
-      [
-        [1869]
-      ],
-      [
-        [1870]
-      ],
-      [
-        [1871]
-      ],
-      [
-        [1872]
-      ],
-      [
-        [1873]
-      ],
-      [
-        [1874]
-      ],
-      [
-        [1875]
-      ],
-      [
-        [1876]
-      ],
-      [
-        [1877]
-      ],
-      [
-        [1878]
-      ],
-      [
-        [1879]
-      ],
-      [
-        [1880]
-      ],
-      [
-        [1881]
-      ],
-      [
-        [1882]
-      ],
-      [
-        [1883]
-      ],
-      [
-        [1884]
-      ],
-      [
-        [1885]
-      ],
-      [
-        [1886]
-      ],
-      [
-        [1887]
-      ],
-      [
-        [1888]
-      ],
-      [
-        [1889]
-      ],
-      [
-        [1890]
-      ],
-      [
-        [1891]
-      ],
-      [
-        [1892]
-      ],
-      [
-        [1893]
-      ],
-      [
-        [1894]
-      ],
-      [
-        [1895]
-      ],
-      [
-        [1896]
-      ],
-      [
-        [1897]
-      ],
-      [
-        [1898]
-      ],
-      [
-        [1899]
-      ],
-      [
-        [1900]
-      ],
-      [
-        [1901]
-      ],
-      [
-        [1902]
-      ],
-      [
-        [1903]
-      ],
-      [
-        [1904]
-      ],
-      [
-        [1905]
-      ],
-      [
-        [1906]
-      ],
-      [
-        [1907]
-      ],
-      [
-        [1908]
-      ],
-      [
-        [1909]
-      ],
-      [
-        [1910]
-      ],
-      [
-        [1911]
-      ],
-      [
-        [1912]
-      ],
-      [
-        [1913]
-      ],
-      [
-        [1914]
-      ],
-      [
-        [1915]
-      ],
-      [
-        [1916]
-      ],
-      [
-        [1917]
-      ],
-      [
-        [1918]
-      ],
-      [
-        [1919]
-      ],
-      [
-        [1920]
-      ],
-      [
-        [1921]
-      ],
-      [
-        [1922]
-      ],
-      [
-        [1923]
-      ],
-      [
-        [1924]
-      ],
-      [
-        [1925]
-      ],
-      [
-        [1926]
-      ],
-      [
-        [1927]
-      ],
-      [
-        [1928]
-      ],
-      [
-        [1929]
-      ],
-      [
-        [1930]
-      ],
-      [
-        [1931]
-      ],
-      [
-        [1932]
-      ],
-      [
-        [1933]
-      ],
-      [
-        [1934]
-      ],
-      [
-        [1935]
-      ],
-      [
-        [1936]
-      ],
-      [
-        [1937]
-      ],
-      [
-        [1938]
-      ],
-      [
-        [1939]
-      ],
-      [
-        [1940]
-      ],
-      [
-        [1941]
-      ],
-      [
-        [1942]
-      ],
-      [
-        [1943]
-      ],
-      [
-        [1944]
-      ],
-      [
-        [1945]
-      ],
-      [
-        [1946]
-      ],
-      [
-        [1947]
-      ],
-      [
-        [1948]
-      ],
-      [
-        [1949]
-      ],
-      [
-        [1950]
-      ],
-      [
-        [1951]
-      ],
-      [
-        [1952]
-      ],
-      [
-        [1953]
-      ],
-      [
-        [1954]
-      ],
-      [
-        [1955]
-      ],
-      [
-        [1956]
-      ],
-      [
-        [1957]
-      ]
-    ],
+    "arcs": antarcticaArcs,
     "id": "010",
     "properties": {
-      "name": "Antarctica"
+      "name": "Antarctica",
+      continent: Continent.ANTARCTICA,
     }
   },
   {
@@ -6781,7 +5594,8 @@ export const geometries: Array<GeometryObject> = [
     ],
     "id": "534",
     "properties": {
-      "name": "Sint Maarten"
+      "name": "Sint Maarten",
+      continent: Continent.NORTH_AMERICA,
     }
   }
 ]
