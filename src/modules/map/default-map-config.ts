@@ -1,6 +1,6 @@
 import type { FeatureCollection, Geometry, Feature } from 'geojson';
-import { availableBanknotes } from '../../constants/countries';
 import type { ActiveElement, Chart, ChartConfiguration, ChartConfigurationCustomTypesPerDataset, ChartEvent, ChartType, ChartTypeRegistry } from 'chart.js';
+import { availableBanknotes, availableBanknotesList } from '../../constants/available-banknotes/available-banknotes';
 
 export interface DefaultMapConfig {
   countries: FeatureCollection<Geometry, {
@@ -11,6 +11,7 @@ export interface DefaultMapConfig {
 
 export const defaultMapConfig = (data: DefaultMapConfig): ChartConfiguration | ChartConfigurationCustomTypesPerDataset => {
   const { countries, onClick } = data;
+  const availableBanknotesListTest = availableBanknotesList().map(item => item.country);
 
   return {
     type: 'choropleth',
@@ -21,7 +22,7 @@ export const defaultMapConfig = (data: DefaultMapConfig): ChartConfiguration | C
         data: countries.features
           .map((d) => ({
             feature: d,
-            value: availableBanknotes.includes(d.properties.name) ? 100 : 0, // ⬅️ 100 для России, 0 для остальных
+            value: availableBanknotesListTest.includes(d.properties.name) ? 100 : 0, // ⬅️ 100 для России, 0 для остальных
           })),
         borderColor: countries.features.map((d) => '#bcbcbc'
           // availableBanknotes.includes(d.properties.name) ? 'red' : 'transparent' // ⬅️ Белая граница для выбранных стран
