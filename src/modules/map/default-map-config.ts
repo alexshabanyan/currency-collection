@@ -1,6 +1,6 @@
 import type { FeatureCollection, Geometry, Feature } from 'geojson';
 import type { ActiveElement, Chart, ChartConfiguration, ChartConfigurationCustomTypesPerDataset, ChartEvent, ChartType, ChartTypeRegistry } from 'chart.js';
-import { availableBanknotes, availableBanknotesList } from '../../constants/available-banknotes/available-banknotes';
+import { availableBanknotesList } from '../../constants/available-banknotes/available-banknotes';
 
 export interface DefaultMapConfig {
   countries: FeatureCollection<Geometry, {
