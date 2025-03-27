@@ -7,3 +7,8 @@ export enum Continent {
   AUSTRALIA = 'AUSTRALIA',
   ANTARCTICA = 'ANTARCTICA',
 }
+
+export interface ContinentInfo {
+  continent: Continent,
+  name: string,
+}

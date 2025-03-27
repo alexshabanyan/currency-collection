@@ -1,4 +1,4 @@
-import { Continent } from "../../world-geo-data/types";
+import { Continent } from "../../types/continents/types";
 
 export interface AvailableBanknote {
   country: string,

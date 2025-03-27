@@ -1,5 +1,5 @@
-import { Continent } from "../../world-geo-data/types";
-import { AvailableBanknote, AvailableBanknoteExpand } from "./types";
+import { Continent } from "../../../types/continents/types";
+import { AvailableBanknote, AvailableBanknoteExpand } from "../types";
 
 export const asiaAvailableBanknotes: AvailableBanknote[] = [
   { country: 'China' },

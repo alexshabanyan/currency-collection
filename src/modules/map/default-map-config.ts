@@ -25,7 +25,6 @@ export const defaultMapConfig = (data: DefaultMapConfig): ChartConfiguration | C
             value: availableBanknotesListTest.includes(d.properties.name) ? 100 : 0, // ⬅️ 100 для России, 0 для остальных
           })),
         borderColor: countries.features.map((d) => '#bcbcbc'
-          // availableBanknotes.includes(d.properties.name) ? 'red' : 'transparent' // ⬅️ Белая граница для выбранных стран
     ),
     borderWidth: 1,
       }],
@@ -49,11 +48,7 @@ export const defaultMapConfig = (data: DefaultMapConfig): ChartConfiguration | C
       plugins: {
         legend: { display: false },
       },
-      onClick: (event, elements) => {
-        console.log("🚀 ~ onMounted ~ elements:", elements)
-        console.log("🚀 ~ onMounted ~ event:", event)
-        
-      },
+      onClick,
     },
   }
 }

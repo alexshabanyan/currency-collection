@@ -1,5 +1,5 @@
 import type { GeometryObject } from 'topojson-specification';
-import { Continent } from '../../world-geo-data/types';
+import { Continent } from '../../types/continents/types';
 import { russiaArcs } from './countries-arcs/europe-arcs';
 import { antarcticaArcs } from './countries-arcs/antarctica-arcs';
 import { canadaArcs, usaArcs } from './countries-arcs/north-america-arcs';

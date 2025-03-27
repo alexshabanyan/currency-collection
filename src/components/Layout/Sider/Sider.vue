@@ -1,11 +1,6 @@
 <template>
   <a-layout-sider v-model:collapsed="layoutStore.menuCollapsedValue" :trigger="null" collapsible>
-    <a-menu v-model:selectedKeys="selectedKeys" theme="dark" mode="inline">
-      <a-menu-item key="1">
-        <compass-outlined />
-        <span>Карта мира</span>
-      </a-menu-item>
-    </a-menu>
+    <Menu />
   </a-layout-sider>
 </template>
 
@@ -13,6 +8,7 @@
 import { ref } from 'vue';
 import { useLayoutStore } from '../../../store/layout-store';
 import { UserOutlined, VideoCameraOutlined, UploadOutlined, CompassOutlined } from '@ant-design/icons-vue';
+import Menu from '../../Menu/Menu.vue';
 
 const layoutStore = useLayoutStore();
 

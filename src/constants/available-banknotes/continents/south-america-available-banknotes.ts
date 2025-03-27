@@ -1,5 +1,5 @@
-import { Continent } from "../../world-geo-data/types";
-import { AvailableBanknoteExpand } from "./types";
+import { Continent } from "../../../types/continents/types";
+import { AvailableBanknoteExpand } from "../types";
 
 export const southAmericaAvailableBanknotes = [
   { country: 'Brazil' },
