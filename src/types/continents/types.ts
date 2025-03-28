@@ -1,3 +1,5 @@
+import { ContinentRouteNames } from "../../router/continents";
+
 export enum Continent {
   AFRICA = 'AFRICA',
   EUROPE = 'EUROPE',
@@ -11,4 +13,5 @@ export enum Continent {
 export interface ContinentInfo {
   continent: Continent,
   name: string,
+  routeName?: ContinentRouteNames,
 }

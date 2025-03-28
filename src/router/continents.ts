@@ -1,22 +1,22 @@
 import { RouteRecordRaw } from "vue-router";
 import Continents from '../pages/Continents/Continents.vue'
-import Europe from "../pages/Continents/Europe.vue";
+import ContinentPage from "../pages/Continents/ContinentPage.vue";
 
 export enum ContinentRouteNames {
   Continents = 'Continents',
-  EuropeContinent = 'EuropeContinent',
+  Continent = 'Continent',
 }
 
 export const continentRoutes: Array<RouteRecordRaw> = [
   {
-    path: 'continent',
+    path: 'continents',
     name: ContinentRouteNames.Continents,
     component: Continents,
     children: [
       {
-        path: 'europe',
-        name: ContinentRouteNames.EuropeContinent,
-        component: Europe,
+        path: ':continentName/continent',
+        name: ContinentRouteNames.Continent,
+        component: ContinentPage,
       }
     ]
   },

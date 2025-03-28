@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from "vue-router";
 import Continents from '../pages/Continents/Continents.vue'
-import Europe from "../pages/Continents/Europe.vue";
+import Europe from "../pages/Continents/ContinentPage.vue";
 import EarthMap
  from "../pages/EarthMap/EarthMap.vue";
 

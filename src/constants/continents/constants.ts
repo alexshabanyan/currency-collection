@@ -1,3 +1,4 @@
+import { ContinentRouteNames } from "../../router/continents";
 import { Continent, ContinentInfo } from "../../types/continents/types"
 
 export const continentValues = {
@@ -15,7 +16,8 @@ export const continentsInfo = (): ContinentInfo[] => {
     .values(Continent)
     .map((continent) => ({
       continent,
-      name: continentValues[continent]
+      name: continentValues[continent],
+      routeName: ContinentRouteNames.Continent,
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
